@@ -9,7 +9,7 @@ namespace tutorial2
     {
         static void Main(string[] args)
         {
-            Student student = new Student() { firstname = "Aysenur", lastname = "Ozgur", snumber = "s19358" };
+            Student student = new Student() { firstname = "Aysenur", lastname = "Ozgur", snumber = "s19358" ,birthdate="06.08.1997",email="s19358@pjwstk.edu.pl"};
             FileStream writer = new FileStream(@"data.xml", FileMode.Create);
             XmlSerializer serializer = new XmlSerializer(typeof(Student), new XmlRootAttribute("university"));
 
